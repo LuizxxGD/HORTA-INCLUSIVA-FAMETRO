@@ -131,10 +131,10 @@ function App() {
   ];
 
   const teamMembers = [
-    { name: "Ana Silva", role: "Gerente de Projeto", photo: "https://picsum.photos/200/200?random=1" },
-    { name: "Bruno Costa", role: "Engenheiro de Hardware", photo: "https://picsum.photos/200/200?random=2" },
-    { name: "Carla Dias", role: "Desenvolvedora de Software", photo: "https://picsum.photos/200/200?random=3" },
-    { name: "Daniel Farias", role: "Designer UX/UI", photo: "https://picsum.photos/200/200?random=4" },
+    { name: "membro1", role: "Gerente de Projeto", photo: "https://picsum.photos/200/200?random=1" },
+    { name: "membro2", role: "Engenheiro de Hardware", photo: "https://picsum.photos/200/200?random=2" },
+    { name: "membro3", role: "Desenvolvedora de Software", photo: "https://picsum.photos/200/200?random=3" },
+    { name: "membro4", role: "Designer UX/UI", photo: "https://picsum.photos/200/200?random=4" },
   ];
 
   const resources = [
