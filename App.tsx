@@ -81,7 +81,6 @@ function App() {
     { id: 'recursos', name: 'Recursos' },
     { id: 'riscos', name: 'Riscos' },
     { id: 'sucesso', name: 'Resultados' },
-    { id: 'contato', name: 'Contato' },
   ];
 
   const scopeItems = [
@@ -173,7 +172,7 @@ function App() {
         {/* Hero Section */}
         <section
           className="h-screen bg-cover bg-center flex items-center justify-center text-white relative"
-          style={{ backgroundImage: "url('./img/FUNDOHOTSENSIHERO.png')" }}>
+          style={{ backgroundImage: "url('/FUNDOHOTSENSIHERO.png')" }}>
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="text-center z-10 p-4 opacity-0 animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
@@ -390,19 +389,6 @@ function App() {
         </div>
 
 
-        {/* Contato Section */}
-        <section id="contato" className="py-20 px-4 bg-verde-suave/30 relative" style={{backgroundImage: "url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
-          <div className="absolute inset-0 bg-creme/80"></div>
-          <div className="container mx-auto text-center relative z-10">
-            <h2 className="text-4xl font-bold text-verde-escuro mb-6 opacity-0 animate-fade-in-up">Entre em Contato</h2>
-            <p className="text-lg max-w-2xl mx-auto mb-8 opacity-0 animate-fade-in-up animation-delay-200">
-              Tem interesse no projeto, gostaria de colaborar ou apenas saber mais? Adoraríamos ouvir de você!
-            </p>
-            <a href="mailto:contato@hortainclusiva.com" className="bg-verde-escuro text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-azul-escuro transition-colors duration-300 transform hover:scale-105 inline-block opacity-0 animate-fade-in-up animation-delay-400">
-              Enviar um E-mail
-            </a>
-          </div>
-        </section>
 
       </main>
 
