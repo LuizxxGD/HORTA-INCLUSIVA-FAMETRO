@@ -73,8 +73,11 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
 
 function App() {
   const sections = [
-    { id: 'objetivo', name: 'Objetivo' },
-    { id: 'escopo', name: 'Escopo' },
+    { id: 'sobre', name: 'Sobre' },
+    { id: 'funcionamento', name: 'Como Funciona' },
+    { id: 'objetivos', name: 'Objetivos' },
+    { id: 'publico', name: 'Público-alvo' },
+    { id: 'importancia', name: 'Importância' },
     { id: 'cronograma', name: 'Cronograma' },
     { id: 'metodologia', name: 'Metodologia' },
     { id: 'equipe', name: 'Equipe' },
@@ -192,16 +195,22 @@ function App() {
         </div>
 
 
-        {/* Objetivo Section */}
-        <section id="objetivo" className="py-20 px-4 container mx-auto text-center">
+        {/* Sobre o Projeto Section */}
+        <section id="sobre" className="py-20 px-4 container mx-auto text-center">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="opacity-0 animate-fade-in-up text-left">
-                    <h2 className="text-4xl font-bold text-verde-escuro mb-6">Nosso Objetivo</h2>
+                    <h2 className="text-4xl font-bold text-verde-escuro mb-6">Sobre o Projeto</h2>
                     <p className="text-lg mb-4">
-                        O projeto "Hotsensi+" visa desenvolver uma solução de horta automatizada, sustentável e, acima de tudo, acessível. Nosso foco é empoderar pessoas com mobilidade reduzida ou deficiência visual, proporcionando-lhes as ferramentas para cultivar seus próprios alimentos frescos.
+                        Hortsensi+ é um sistema automatizado de horta acessível, desenvolvido para promover a inclusão de pessoas com mobilidade reduzida ou deficiência visual.
+                    </p>
+                    <p className="text-lg mb-4">
+                        O projeto une tecnologia, sustentabilidade e acessibilidade, automatizando a rega e o monitoramento da umidade e temperatura das plantas.
+                    </p>
+                    <p className="text-lg mb-4">
+                        Com botões ampliados e símbolos em Braille, o sistema oferece autonomia e segurança para que qualquer pessoa possa cultivar de forma independente.
                     </p>
                     <p className="text-lg">
-                        Queremos quebrar barreiras e promover a inclusão através do contato com a natureza, incentivando a autonomia, o bem-estar e práticas de consumo mais conscientes e saudáveis.
+                        O objetivo é tornar o cultivo doméstico mais acessível e inclusivo, aproximando a tecnologia da natureza.
                     </p>
                 </div>
                 <div className="flex justify-center items-center opacity-0 animate-fade-in-up animation-delay-200">
@@ -211,18 +220,26 @@ function App() {
         </section>
 
 
-        {/* Escopo Section */}
-        <section id="escopo" className="py-20 px-4 bg-verde-suave/30">
+        {/* Como Funciona Section */}
+        <section id="funcionamento" className="py-20 px-4 bg-verde-suave/30">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-verde-escuro mb-12 opacity-0 animate-fade-in-up">Escopo do Projeto</h2>
+            <h2 className="text-4xl font-bold text-verde-escuro mb-12 opacity-0 animate-fade-in-up">Como Funciona</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {scopeItems.map((item, index) => (
-                <div key={index} className={`bg-creme p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 opacity-0 animate-fade-in-up animation-delay-${index * 200}`}>
-                  <div className="text-5xl mb-4">{item.icon}</div>
-                  <h3 className="text-2xl font-bold text-verde-escuro mb-3">{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              ))}
+              <div className="bg-creme p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 opacity-0 animate-fade-in-up">
+                <div className="text-5xl mb-4">💧</div>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">Automação da Irrigação</h3>
+                <p>Controla a rega das plantas conforme a necessidade, garantindo a quantidade ideal de água para cada tipo de cultivo.</p>
+              </div>
+              <div className="bg-creme p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 opacity-0 animate-fade-in-up animation-delay-200">
+                <div className="text-5xl mb-4">📊</div>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">Monitoramento Inteligente</h3>
+                <p>Acompanha as condições ideais do cultivo através de sensores de umidade e temperatura em tempo real.</p>
+              </div>
+              <div className="bg-creme p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 opacity-0 animate-fade-in-up animation-delay-400">
+                <div className="text-5xl mb-4">♿</div>
+                <h3 className="text-2xl font-bold text-verde-escuro mb-3">Interface Acessível</h3>
+                <p>Botões ampliados e símbolos em Braille proporcionam autonomia total ao usuário, independentemente de suas limitações físicas ou visuais.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -253,6 +270,101 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Objetivos Section */}
+        <section id="objetivos" className="py-20 px-4 container mx-auto">
+          <h2 className="text-4xl font-bold text-verde-escuro mb-12 text-center opacity-0 animate-fade-in-up">Objetivos</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-lg opacity-0 animate-fade-in-up">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Acessibilidade Universal</h3>
+              <p className="text-lg">Tornar o cultivo doméstico acessível a todos, independentemente de limitações físicas ou visuais.</p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-200">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Autonomia Tecnológica</h3>
+              <p className="text-lg">Promover autonomia e inclusão tecnológica através de interfaces intuitivas e acessíveis.</p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-400">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Sustentabilidade</h3>
+              <p className="text-lg">Estimular práticas sustentáveis e educativas para um futuro mais consciente.</p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-600">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Inovação Social</h3>
+              <p className="text-lg">Demonstrar o potencial da automação aplicada à acessibilidade e inclusão social.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Público-alvo Section */}
+        <section id="publico" className="py-20 px-4 bg-verde-suave/30">
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl font-bold text-verde-escuro mb-12 opacity-0 animate-fade-in-up">Público-alvo</h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg mb-6 opacity-0 animate-fade-in-up animation-delay-200">
+                O sistema é voltado a pessoas com deficiência visual e mobilidade reduzida, além de instituições educativas e sociais que buscam soluções acessíveis e sustentáveis para o ensino e prática de jardinagem.
+              </p>
+              <div className="grid md:grid-cols-3 gap-8 mt-8">
+                <div className="bg-creme p-6 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-400">
+                  <div className="text-4xl mb-4">👁️</div>
+                  <h3 className="text-xl font-bold text-verde-escuro mb-2">Deficiência Visual</h3>
+                  <p>Pessoas com baixa visão ou cegueira total</p>
+                </div>
+                <div className="bg-creme p-6 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-600">
+                  <div className="text-4xl mb-4">♿</div>
+                  <h3 className="text-xl font-bold text-verde-escuro mb-2">Mobilidade Reduzida</h3>
+                  <p>Usuários de cadeira de rodas ou com limitações motoras</p>
+                </div>
+                <div className="bg-creme p-6 rounded-xl shadow-lg opacity-0 animate-fade-in-up animation-delay-800">
+                  <div className="text-4xl mb-4">🏫</div>
+                  <h3 className="text-xl font-bold text-verde-escuro mb-2">Instituições</h3>
+                  <p>Escolas, ONGs e centros de reabilitação</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Importância Section */}
+        <section id="importancia" className="py-20 px-4 container mx-auto">
+          <h2 className="text-4xl font-bold text-verde-escuro mb-12 text-center opacity-0 animate-fade-in-up">Importância</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="opacity-0 animate-fade-in-up">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Benefícios à Saúde</h3>
+              <p className="text-lg mb-4">
+                Uma meta-análise examinou 22 estudos (76 comparações) e concluiu que jardinagem melhora resultados de saúde física, psicológica e social.
+              </p>
+              <p className="text-lg">
+                Pessoas com limitações de mobilidade que praticavam jardinagem diária tiveram menor risco de mortalidade em comparação aos que não jardinavam.
+              </p>
+            </div>
+            <div className="opacity-0 animate-fade-in-up animation-delay-200">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Inclusão e Acessibilidade</h3>
+              <p className="text-lg mb-4">
+                Jardins acessíveis (caminhos largos, camas elevadas, adaptados para cadeirantes ou baixa visão) promovem bem-estar, pertencimento social e segurança.
+              </p>
+              <p className="text-lg">
+                O design universal em jardins promove redução de isolamento, estimulação sensorial e inclusão.
+              </p>
+            </div>
+            <div className="opacity-0 animate-fade-in-up animation-delay-400">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Sustentabilidade</h3>
+              <p className="text-lg mb-4">
+                Jardins domésticos e hortas ajudam a melhorar segurança alimentar, nutrição e acessibilidade a alimentos frescos.
+              </p>
+              <p className="text-lg">
+                Hortas comunitárias produzem milhares de porções de vegetais por temporada, melhorando a nutrição da comunidade.
+              </p>
+            </div>
+            <div className="opacity-0 animate-fade-in-up animation-delay-600">
+              <h3 className="text-2xl font-bold text-verde-escuro mb-4">Tecnologia e Independência</h3>
+              <p className="text-lg mb-4">
+                Incorporar tecnologia e adaptabilidade em jardinagem urbana ajuda pessoas de diferentes níveis de mobilidade a participar.
+              </p>
+              <p className="text-lg">
+                Ferramentas adaptadas e sistemas automatizados garantem que todos possam cultivar com autonomia e segurança.
+              </p>
+            </div>
           </div>
         </section>
 
