@@ -80,7 +80,7 @@ function App() {
     { id: 'equipe', name: 'Equipe' },
     { id: 'recursos', name: 'Recursos' },
     { id: 'riscos', name: 'Riscos' },
-    { id: 'sucesso', name: 'Sucesso' },
+    { id: 'sucesso', name: 'Resultados' },
     { id: 'contato', name: 'Contato' },
   ];
 
@@ -160,7 +160,7 @@ function App() {
     <div className="bg-creme text-gray-800">
       <header className="bg-creme/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-verde-escuro">Horta Inclusiva</a>
+          <a href="#" className="text-2xl font-bold text-verde-escuro">Hotsensi+</a>
           <div className="hidden lg:flex items-center space-x-2">
             {sections.map(section => (
               <NavLink key={section.id} href={`#${section.id}`}>{section.name}</NavLink>
@@ -173,14 +173,14 @@ function App() {
         {/* Hero Section */}
         <section
           className="h-screen bg-cover bg-center flex items-center justify-center text-white relative"
-          style={{ backgroundImage: "url('https://i.postimg.cc/QtrbPWcD/image.png')" }}>
+          style={{ backgroundImage: "url('fundohortashero.png')" }}>
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="text-center z-10 p-4 opacity-0 animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-              Horta Inclusiva
+              Hotsensi+
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-0 animate-fade-in-up animation-delay-200" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
-              Cultivando autonomia e sustentabilidade para todos.
+              Tecnologia inclusiva para hortas inteligentes e acessíveis.
             </p>
           </div>
         </section>
@@ -199,7 +199,7 @@ function App() {
                 <div className="opacity-0 animate-fade-in-up text-left">
                     <h2 className="text-4xl font-bold text-verde-escuro mb-6">Nosso Objetivo</h2>
                     <p className="text-lg mb-4">
-                        O projeto "Horta Inclusiva" visa desenvolver uma solução de horta automatizada, sustentável e, acima de tudo, acessível. Nosso foco é empoderar pessoas com mobilidade reduzida ou deficiência visual, proporcionando-lhes as ferramentas para cultivar seus próprios alimentos frescos.
+                        O projeto "Hotsensi+" visa desenvolver uma solução de horta automatizada, sustentável e, acima de tudo, acessível. Nosso foco é empoderar pessoas com mobilidade reduzida ou deficiência visual, proporcionando-lhes as ferramentas para cultivar seus próprios alimentos frescos.
                     </p>
                     <p className="text-lg">
                         Queremos quebrar barreiras e promover a inclusão através do contato com a natureza, incentivando a autonomia, o bem-estar e práticas de consumo mais conscientes e saudáveis.
@@ -340,15 +340,44 @@ function App() {
               </ul>
             </div>
             <div id="sucesso" className="opacity-0 animate-fade-in-up animation-delay-200">
-              <h2 className="text-4xl font-bold text-verde-escuro mb-8 text-center">Critérios de Sucesso</h2>
-               <ul className="space-y-4">
-                {successCriteria.map((criterion, index) => (
-                  <li key={index} className="bg-white p-4 rounded-lg shadow-md flex items-center">
-                      <SuccessIcon className="h-6 w-6 text-green-500 mr-3 flex-shrink-0"/>
-                      {criterion}
-                  </li>
-                ))}
-              </ul>
+              <h2 className="text-4xl font-bold text-verde-escuro mb-8 text-center">Resultados e Impacto</h2>
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-start">
+                    <SuccessIcon className="h-8 w-8 text-green-500 mr-4 flex-shrink-0 mt-1"/>
+                    <div>
+                      <h3 className="text-xl font-bold text-verde-escuro mb-3">Sistema Automatizado Eficiente</h3>
+                      <p className="text-gray-700 mb-4">
+                        Os testes mostraram que o sistema automatizado funciona de forma eficiente no controle da irrigação, umidade e temperatura das plantas, garantindo um cultivo mais saudável, sustentável e inteligente.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-start">
+                    <SuccessIcon className="h-8 w-8 text-green-500 mr-4 flex-shrink-0 mt-1"/>
+                    <div>
+                      <h3 className="text-xl font-bold text-verde-escuro mb-3">Interface Acessível Aprovada</h3>
+                      <p className="text-gray-700 mb-4">
+                        A interface acessível, com botões em Braille e comandos simples, foi testada e aprovada, confirmando que pessoas com deficiência visual ou mobilidade reduzida podem cuidar da horta com autonomia e segurança.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex items-start">
+                    <SuccessIcon className="h-8 w-8 text-green-500 mr-4 flex-shrink-0 mt-1"/>
+                    <div>
+                      <h3 className="text-xl font-bold text-verde-escuro mb-3">Impacto Social Positivo</h3>
+                      <p className="text-gray-700">
+                        O projeto demonstrou potencial significativo para promover inclusão social, autonomia e bem-estar através do contato com a natureza, criando oportunidades reais de cultivo para todos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -378,7 +407,7 @@ function App() {
       </main>
 
       <footer className="bg-verde-escuro text-white text-center p-6">
-        <p>&copy; {new Date().getFullYear()} Horta Inclusiva. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Hotsensi+. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
