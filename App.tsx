@@ -173,7 +173,7 @@ function App() {
         {/* Hero Section */}
         <section
           className="h-screen bg-cover bg-center flex items-center justify-center text-white relative"
-          style={{ backgroundImage: "url('fundohortashero.png')" }}>
+          style={{ backgroundImage: "url('./FUNDOHOTSENSIHERO.png')" }}>
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="text-center z-10 p-4 opacity-0 animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
