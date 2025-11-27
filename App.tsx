@@ -512,7 +512,7 @@ function App() {
       </main>
 
       <footer className="bg-verde-escuro text-white text-center p-6">
-        <p>&copy; {new Date().getFullYear()} Hotsensi+. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Hortsensi+. Todos os direitos reservados.</p>
         <div className="mt-4 flex items-center justify-center gap-2">
           <p className="text-sm">Acesse nosso instagram</p>
           <a 
