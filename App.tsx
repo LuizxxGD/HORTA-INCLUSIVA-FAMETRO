@@ -169,7 +169,7 @@ function App() {
     <div className="bg-creme text-gray-800">
       <header className="bg-creme/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-verde-escuro">Hotsensi+</a>
+          <a href="#" className="text-2xl font-bold text-verde-escuro">Hortsensi+</a>
           <div className="hidden lg:flex items-center space-x-2">
             {sections.map(section => (
               <NavLink key={section.id} href={`#${section.id}`}>{section.name}</NavLink>
@@ -186,7 +186,7 @@ function App() {
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="text-center z-10 p-4 opacity-0 animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-              Hotsensi+
+              Hortsensi+
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-0 animate-fade-in-up animation-delay-200" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
               Tecnologia inclusiva para hortas inteligentes e acessíveis.
