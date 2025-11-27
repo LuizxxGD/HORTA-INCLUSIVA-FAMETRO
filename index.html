@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotsensi+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              creme: '#FFF9E6',
+              'amarelo-claro': '#FFE083',
+              'verde-suave': '#A3CFA7',
+              'verde-escuro': '#6DAF82',
+              'azul-delicado': '#9CC4E4',
+              'azul-escuro': '#6FAED9',
+            },
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        },
+        plugins: [
+            function({ addUtilities }) {
+                const newUtilities = {
+                    '.animation-delay-200': { animationDelay: '200ms' },
+                    '.animation-delay-400': { animationDelay: '400ms' },
+                    '.animation-delay-600': { animationDelay: '600ms' },
+                }
+                addUtilities(newUtilities, ['responsive', 'hover'])
+            }
+        ],
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-creme font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
